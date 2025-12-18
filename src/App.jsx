@@ -6,7 +6,6 @@ import myPhoto from "./assets/formalsMee.jpg";
 import { HeroParallaxDemo } from "./components/HeroParallaxDemo";
 
 import Cursor from "./Cursor";
-import DecryptedText from "./DecryptedText";
 import Intro from "./Intro";
 import ScrollProgress from "./ScrollProgress";
 import ShaderBackground from "./ShaderBackground";
@@ -88,12 +87,14 @@ export default function App() {
       transition={{ duration: 1 }}
     >
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug mb-4">
-        I&apos;m <span className="text-[#c83880]">Prachi Gupta</span>
-        <br />
-        <span className="text-base sm:text-lg md:text-2xl font-medium text-gray-200">
-          <DecryptedText text="Full-Stack Developer & Competitive Programmer" />
-        </span>
-      </h1>
+  I&apos;m <span className="text-[#c83880]">Prachi Gupta</span>
+  <br />
+  <span className="text-base sm:text-lg md:text-2xl font-medium text-gray-200">
+    <span className="block md:inline">Full-Stack Developer</span>
+    <span className="block md:inline">&nbsp;& Competitive Programmer</span>
+  </span>
+</h1>
+
 
       <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed mb-6 px-2 sm:px-0">
         I’m currently pursuing my B.Tech in Computer Science Engineering at
