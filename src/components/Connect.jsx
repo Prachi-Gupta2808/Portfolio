@@ -24,17 +24,13 @@ export default function ContactDemo() {
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
-          message: message, // must match {{message}} in template
+          message: message,
         },
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(() => {
         alert("Message sent successfully!!");
       })
-      .catch((error) => {
-        console.error("EmailJS Error:", error);
-        alert("Failed to send message!!");
-      });
   };
 
   return (
