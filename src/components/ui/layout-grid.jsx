@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 import { useState } from "react";
-import { cn } from "../../lib/utils"; // ✅ FIX: correct path (no alias issues)
+import { cn } from "../../lib/utils";
 
 export const LayoutGrid = ({ cards }) => {
   const [selected, setSelected] = useState(null);

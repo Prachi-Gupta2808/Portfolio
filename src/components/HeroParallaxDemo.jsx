@@ -4,7 +4,7 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import React from "react";
 import DecryptedText from "../DecryptedText";
 import useScrollToTop from "../utils/scrolltotop";
-// Import images
+
 import bootstrap from "../assets/bootstrap.png";
 import canva from "../assets/canva.png";
 import css from "../assets/css.png";
@@ -19,7 +19,6 @@ import python from "../assets/python.png";
 import react from "../assets/react.png";
 import c from "../assets/s.png";
 
-// Products array
 export const products = [
   { title: "Tailwind CSS", image: css },
   { title: "HTML", image: html },
@@ -38,7 +37,6 @@ export const products = [
   {title: "MySql", image:"https://pngimg.com/d/mysql_PNG9.png"},
 ];
 
-// HeroParallax
 export const HeroParallax = ({ products }) => {
   useScrollToTop();
 

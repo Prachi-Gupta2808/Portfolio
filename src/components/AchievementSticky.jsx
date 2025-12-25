@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import DecryptedText from "../DecryptedText";
 import { StickyScroll } from "../components/ui/sticky-scroll-reveal";
 
-// 🔹 Achievement images
 import algoqueen from "../assets/algoqueen.jpg";
 import author from "../assets/author.jpg";
 import codess from "../assets/codess.jpg";

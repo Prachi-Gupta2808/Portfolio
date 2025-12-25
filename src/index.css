@@ -1,5 +1,4 @@
 @import "tailwindcss";
-/* Hide default cursor */
 html,
 body {
   cursor: none !important;
@@ -69,4 +68,15 @@ canvas {
 
 .animate-fadeIn {
   animation: fadeIn 1s forwards;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
+body {
+  -ms-overflow-style: none;
 }

@@ -8,7 +8,6 @@ export const StickyScroll = ({ content, contentClassName }) => {
   const [activeCard, setActiveCard] = useState(0);
   const ref = useRef(null);
 
-  // 🔹 Normal page scroll (NO internal scrollbar)
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start center", "end center"],
@@ -16,7 +15,6 @@ export const StickyScroll = ({ content, contentClassName }) => {
 
   const cardLength = content.length;
 
-  // 🔹 Slower & smoother switching
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
     const breakpoints = content.map((_, index) => index / (cardLength - 0.5));
     for (let i = 0; i < breakpoints.length; i++) {
@@ -29,7 +27,6 @@ export const StickyScroll = ({ content, contentClassName }) => {
 
   return (
     <div ref={ref} className="relative mx-auto max-w-7xl px-6 py-10 flex flex-col lg:flex-row gap-10 lg:gap-20">
-      {/* ================= LEFT: TEXT ================= */}
       <div className="flex-1">
         {content.map((item, index) => (
           <div key={index} className="min-h-[50vh] sm:min-h-[60vh] flex flex-col justify-center mb-10 lg:mb-0">
@@ -73,7 +70,6 @@ export const StickyScroll = ({ content, contentClassName }) => {
         ))}
       </div>
 
-      {/* ================= RIGHT: IMAGE (desktop only) ================= */}
       <div className="hidden lg:block flex-1">
         <div className={cn("sticky top-32 flex items-center justify-center", contentClassName)}>
           <motion.div

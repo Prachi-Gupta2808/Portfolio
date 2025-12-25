@@ -21,7 +21,6 @@ export default function App() {
 
   return (
     <>
-      {/* Global layers */}
       <ShaderBackground />
       <Cursor />
       <SideEmail />
@@ -30,10 +29,8 @@ export default function App() {
       {/* Intro */}
       {showIntro && <Intro onComplete={() => setShowIntro(false)} />}
 
-      {/* Main Site */}
       {!showIntro && (
         <>
-          {/* ================= HERO SECTION ================= */}
 <main className="min-h-screen text-white relative z-10 flex justify-center px-4 sm:px-6 md:px-16 pt-20 md:pt-24">
   <div className="flex flex-col-reverse md:flex-row items-center gap-12 md:gap-32 max-w-6xl w-full">
 

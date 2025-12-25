@@ -4,7 +4,6 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { LayoutGrid } from "../components/ui/layout-grid";
 
-// 🔹 Profile images
 import codechef from "../assets/chef2.png";
 import codeforces from "../assets/forces.png";
 import github from "../assets/githubb.png";
