@@ -28,7 +28,7 @@ export default function AchievementSticky() {
       ),
     },
     {
-      title: "Semi Finalist - Flipkart Grid 5.0",
+      title: "Semi Finalist - Flipkart Grid 7.0",
       description:
         "Participated in Flipkart Grid 5.0, gaining exposure to real-world problem solving, product thinking, and collaborative development and stood in top percentage till sem finals.",
       content: (
@@ -123,7 +123,6 @@ export default function AchievementSticky() {
       viewport={{ once: true }}
       transition={{ duration: 0.9, ease: "easeOut" }}
     >
-      {/* ===== Heading ===== */}
       <motion.div
         className="max-w-3xl mx-auto py-12 flex flex-col items-center text-center"
         initial={{ opacity: 0, y: 60 }}
@@ -141,7 +140,6 @@ export default function AchievementSticky() {
         </p>
       </motion.div>
 
-      {/* ===== Sticky Scroll (scroll-reveal) ===== */}
       <motion.div
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
