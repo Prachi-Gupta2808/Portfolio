@@ -30,7 +30,7 @@ export default function AchievementSticky() {
     {
       title: "Semi Finalist - Flipkart Grid 7.0",
       description:
-        "Participated in Flipkart Grid 5.0, gaining exposure to real-world problem solving, product thinking, and collaborative development and stood in top percentage till sem finals.",
+        "Participated in Flipkart Grid 7.0, gaining exposure to real-world problem solving, product thinking, and collaborative development and stood in top percentage till sem finals.",
       content: (
         <img
           src={flipkart}
